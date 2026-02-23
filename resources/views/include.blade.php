@@ -21,6 +21,7 @@
                                 <tr class="bg-red-100">
                                     {{-- TÂCHE : incluez le fichier resources/views/includes/row.blade.php --}}
                                     {{-- en lui passant correctement la variable $user --}}
+                                    @include('rows', ['user' => $user])
                                 </tr>
                             @endforeach
                         </tbody>
